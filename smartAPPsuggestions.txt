@@ -1,0 +1,74 @@
+Devices:
+-----------
+SmartSense Moisture
+SmartSense Motion
+SmartSense Multi
+SmartPower Outlet
+SmartSense Presence
+SmartAlert Siren
+
+Other Devices
+-----------
+Aeon Multi
+Aeon SmartEnergy
+
+
+
+SmartApps
+-----------
+Big Turn ON/OFF (Outlet)
+Brighten My Path (Motion, Outlet)
+Ridiculously Automated Garage Door (Multi (x2), Outlet, Presence)
+Darken Behind Me (Motion, Outlet)
+Temperature Warning (Multi)
+Mail Arrived (Multi)
+Light Up The Night (Luminosity, Outlet)
+When It's Going to Rain (None!)
+Text me when there's Motion (Motion)
+Text me when it opens. (Multi)
+Once A Day (None!)
+
+Installed SmartThings APP
+-----------
+--> When It's Going to Rain
+--> Once A Day
+-----------
+SmartSense Moisture
+--> Flood Warning
+--> TODO: Brainstorm This Category...
+-----------
+SmartSense Motion
+--> Brighten My Path (Outlet)
+--> Darken Behind Me (Outlet)
+--> Text me when there's Motion
+-----------
+SmartSense Multi
+--> Ridiculously Automated Garage Door (x2, Outlet, Presence)
+--> Temperature Warning
+--> Mail Arrived
+--> Text me when it opens
+-----------
+SmartPower Outlet
+--> Big Turn ON
+--> Big Turn OFF
+--> Ridiculously Automated Garage Door (Multi x2, Presence)
+--> Darken Behind Me
+--> Brighten My Path
+--> Light Up The Night
+-----------
+SmartSense Presence
+--> Ridiculously Automated Garage Door (Multi x2, Outlet)
+--> Text Me When I'm Here
+--> Notify Me When I leave
+-----------
+SmartAlert Siren
+--> TODO: Alarm stuff.
+-----------
+Aeon SmartEnergy
+--> TV Time CNBC (Outlet)
+--> TODO: Need more here
+
+
+
+
+

@@ -1,0 +1,95 @@
+List of Working SmartApps
+------------------
+
+Alfred Workflow
+IFTTT
+Big Turn OFF
+Big Turn ON
+Brighten Dark Places
+Brighten My Path (fn1)
+Curline Iron
+Darken Behind Me (fn1)
+It's Too Cold
+Double Tap
+Let There Be Light (fn2)
+Light Follows Me (fn1)
+Light Up the Night
+Lights Off, When Closed (fn2)
+Mail Arrived
+Make It So
+Notify Me When
+Notify Me When It Opens (fn5)
+Once A Day
+Ridiculously Automated Garage Door
+Smart Nightlight (fn3)
+Text Me When I'm Not Here (fn4)
+Text Me When It Opens (fn5)
+Text Me When There's Motion
+The Big Switch
+
+Turn It One When I'm Here
+Turn It On When It Opens
+When It's Going To Rain
+Elder Care: Daily Routine
+Elder Care: Slip & Fall
+Habit Helper
+It Moved
+Keep Me Cozy (fn6)
+Keep Me Cozy 2 (fn6)
+Power Allowance (fn7)
+Virtual Thermostat
+Gentle Wake Up
+Medicine Reminder
+Feed My Pet (fn8)
+Has Barkley Been Fed? (fn8)
+Flood Alert!
+Garage Door Monitor
+Lock It When I leave
+Presence Change Push (fn9)
+Presence Change Text (fn9)
+Severe Weather Alert
+Smart Security
+The Gun Case Moved
+Turn It On For 5 Minutes
+Unlock it when I arrive.
+
+
+
+
+
+Useless (f)=function (d)=deprecated (b)=blank (wat)= waaaat
+------------------
+Close my garage (f)
+The Flasher (d)
+Make it look like (b)
+Undead Early Warning (wat)
+
+Fn1 --  Brighten My Path and Darken Behind me should be combined.  It only makes sense to brighten an area when there's motion if after a certain theshold, the lights turn back off.  Merging these shouldn't be too difficult.  Alternatively, just delete those two and just use Light Follows Me.  Shouldn't require much tweaking to be useable as instead of them.
+
+Fn2 -- Let There be light and Lights Off When closed should be combined with an optional fields.  Either you turn the lights on and off, you turn them on, or you turn them off.  No reason for two separate apps.
+
+Fn3 -- Bob had me redo this app + a few features.  It's in Sprint.ly
+
+Fn4 -- Incl option for push notifications
+
+Fn5 -- Why not consolidate these?  It's just a notify or a text.  Same difference.  Just add an if statement or something.
+
+Fn6 -- Pick one or the other.  Having two is confusing.
+
+Fn7 -- Published twice.  Two different versions, two different userbases
+
+Fn8 -- Merge these.  Just set it up to either feed your pet automatically or send you a reminder.  No need for two apps.
+
+Fn9 --  Merge.
+
+
+
+
+
+
+
+
+
+
+
+
