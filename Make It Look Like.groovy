@@ -5,8 +5,8 @@
  */
 
 preferences {
-	section("When I touch the app, turn on...") {
-		input "switches", "capability.switch"
+	section("Utilize these swithces") {
+		input "switches", "capability.switch", multiple: true
         
 	}
 }
@@ -38,28 +38,44 @@ def newDay(){
 }
 	
 	
-def runJob() {
-	
+def runJob() {	
     def startTime = now() - state.daysBeforeMS
     def endTime = startTime + 600000
     def startEvt = new Date(startTime)
     def endEvt = new Date(endTime)
    	log.debug "Days before is $state.daysBefore"
     log.debug "EventsBetween StartTime is $startEvt"
-    log.debug "EventsBetween EndTime is $endEvt"
- 	def evts = switches.eventsBetween(startEvt, endEvt, [max: 1])
+    log.debug "EventsBetween EndTime is $endEvt"	
     log.debug "We have $evts.length events in that time window"
-    evts.each{
-        if(it.name == "switch"){
-        log.debug it.value 
-        log.debug it.date
-        	if(it.value == "on"){
-            	switches.on()
-            }
-            else if(it.value == "off"){
-            	switches.off()
-            }
-       }
-    }
+    if(switches.size() == 1){
+		def evts = switches.eventsBetween(startEvt, endEvt, [max: 1])
+		evts.each{
+			if(it.name == "switch"){
+				if(it.value == "on"){
+					switches.on()
+				}
+				else if(it.value == "off"){
+					switches.off()
+				}
+			}
+		}
+	}
+	else{		
+		switches.each{ 
+			for(i in 0..1){
+				def evts = it.eventsBetween(startEvt, endEvt, [max: 1])
+				if(evts[i].name == "switch"){
+        			log.debug evts[i].value 
+        			log.debug evts[i].date
+        			if(evts[i].value == "on"){
+          				it.on()
+         			}
+         			else if(evts[i].value == "off"){
+        				it.off()
+       		 		}
+				}
+      	  	}
+    	}
+	}
 	
 }
