@@ -77,7 +77,7 @@ def eTemperatureHandler(evt){
         sendNotifHi()
         }
     }
-    if(exTemp < minTemp){
+    else if(exTemp < minTemp){
     	if(freq) {
         schedule("0 0/$freq * * * ?", sendNotifLo)
         }
